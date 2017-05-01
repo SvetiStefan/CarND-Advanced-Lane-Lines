@@ -25,7 +25,7 @@ The test Images are read in a sequence and the function cv2.undistort is used fo
 ![alt text](https://github.com/advaitha/CarND-Advanced-Lane-Lines/blob/master/output_images/original_imagetest3.jpg.jpg)
 
 ##### Undistorted Image
-![alt text](https://github.com/advaitha/CarND-Advanced-Lane-Lines/blob/master/output_images/undistorted_src_dsttest3.jpg.jpg)
+![alt text](https://github.com/advaitha/CarND-Advanced-Lane-Lines/blob/master/output_images/undistorttest3.jpg.jpg)
 
 ## Color and Gradient Thresholding
 I created a function for both color and gradient thresholding. The code for the same is contained in the lines between 100 and 119. I used S_channel for binary thresholding as it was giving better results. For gradient I applied sobel for both x and y direction. Took square and added both the sobels. I took square root and scaled the sobel for standardization. Finally, I created a binary Image with a combination of color and gradient thresholding. This function was applied on all test images and the output was saved to the folder. An image on which this function is applied is as follows:-
